@@ -9,6 +9,10 @@ export const links: NavLinks[] = [
         href: "/",
     },
     {
+        label: "Profile",
+        href: "/profile",
+    },
+    {
         label: "Camp me",
         href: "/camp",
     },
@@ -16,4 +20,8 @@ export const links: NavLinks[] = [
         label: "Favorite",
         href: "/favorite",
     },
+    {
+        label: "Create Landmark",
+        href: "/camp/create",
+    }
 ];

@@ -6,7 +6,7 @@ import Search from "./Search";
 const Navbar = () => {
   return (
     <nav className=" shadow-sm mb-5">
-      <div className="ctn mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="ctn mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Search */}
-        <div className="block md:hidden mt-4">
+        <div className="block md:hidden w-1/3  justify-center items-center">
           <Search />
         </div>
       </div>

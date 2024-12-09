@@ -1,12 +1,17 @@
+import LoadingCard from "@/components/card/LoadingCard"
+import LandmarkContainer from "@/components/home/LandmarkContainer"
 import { Button } from "@/components/ui/button"
+import { Suspense } from "react"
 
-
-const page = () => {
+const page = async ({ searchParams }: { searchParams: { search?: string, category?: string } }) => {
+  const { search, category } = await searchParams
+  // console.log(search)
   return (
-    <div>
-      <Button variant="secondary">Button</Button>
-
-    </div>
+    <section>
+      <Suspense fallback={<LoadingCard />}>
+        <LandmarkContainer search={search} category={category} />
+      </Suspense>
+    </section>
   )
 }
 export default page

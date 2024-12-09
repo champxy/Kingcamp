@@ -4,7 +4,7 @@
 
 @layer components {
   .ctn {
-    @apply px-8 mx-auto;
+    @apply px-20 mx-auto;
   }
 
 

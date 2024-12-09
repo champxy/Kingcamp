@@ -5,6 +5,15 @@ import Navbar from "@/components/Navber/Navbar";
 import Providers from "./Providers";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster"
+import {Kanit} from "next/font/google";
+
+
+const kannit = Kanit({
+  subsets: ["latin", "thai"],
+  weight: ["400", "500", "600", "700"], 
+  style: ["italic","normal"],                  
+});
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +44,7 @@ export default function RootLayout({
     }}>
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kannit.className} antialiased`}
       >
         <Providers>
         <Navbar />
